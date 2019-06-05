@@ -97,3 +97,12 @@ def createMage(self,name, lvl):
         self.dex = 6 + lvl
         
         self.armor = 5 + lvl
+        
+#Enemies
+
+goblin = {}
+goblin['Name'] = 'Goblin'
+goblin['Health'] = 50.0
+goblin['Agility'] = 40.0
+goblin['Strength'] = 35.0
+goblin['Level'] = 1
