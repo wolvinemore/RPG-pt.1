@@ -40,13 +40,13 @@ print ('So you set forth on your quest')
     
 #Characters
 
-class human(object):
+def human(object):
     
     self.maxHP = 100
     self.mana = 200
     self.attack = 100
     
-class orc(object):
+def orc(object):
     
     self.maxHP = 150
     self.mana = 100
