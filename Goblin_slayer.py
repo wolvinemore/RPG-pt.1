@@ -50,8 +50,8 @@ def Fight(enemy):
             
             if Player_attack_lands == True:
                 print("You strike the " + str(Enemy['Name']) + "!")
-                Enemy['Health'] = Enemy['Health'] - player['Strength']
-                print("You've done " + str(player['Strength']) +" damage! ")
+                Enemy['Health'] = round(Enemy['Health'] - player['Strength'])
+                print("You've done " + str(round(player['Strength'])) +" damage! ")
                 print("The " + str(Enemy['Name']) + " now has " + str(Enemy['Health']) + " left. ")
                 if Enemy['Health'] <= 0:
                     pass
@@ -66,7 +66,7 @@ def Fight(enemy):
                         
                     if Enemy_attack_lands == True:
                         print("The " + str(Enemy['Name']) + " lands its attack! ")
-                        player['Health'] = player['Health'] - Enemy['Strength']
+                        player['Health'] = round(player['Health'] - Enemy['Strength'])
                         print("The " + str(Enemy['Name']) + " deals " + str(Enemy['Strength']) + " damage to you. ")
                         print("You have " + str(player['Health']) + " Health left. \na")
                         if player['Health'] <= 0:
@@ -86,7 +86,7 @@ def Fight(enemy):
                     
                 if Enemy_attack_lands == True:
                     print("The " + str(Enemy['Name']) + " lands its attack! ")
-                    player['Health'] = player['Health'] - Enemy['Strength']
+                    player['Health'] = round(player['Health'] - Enemy['Strength'])
                     print("The " + str(Enemy['Name']) + " deals " + str(Enemy['Strength']) + " damage to you. ")
                     print("You have " + str(player['Health']) + " Health left. ")
                     
@@ -96,8 +96,8 @@ def Fight(enemy):
                     else:
                         pass
                     
-    print("You've killed the " + str(enemy['Name']) + "!")
-    
+    print("You've killed the " + str(enemy['Name']) + "!")    
 while player['Health'] > 0:
     Fight(goblin)
     print("")   
+    
