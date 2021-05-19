@@ -5,7 +5,8 @@ import time
     
 
 print("HeacockBros RPG\n")    
-    
+
+#Start Menu, possibly make callable function
 start = True
 while (start):
     print ("(A) Start Game\n"
@@ -102,7 +103,7 @@ def createMage(self,name, lvl):
 
 goblin = {}
 goblin['Name'] = 'Goblin'
-goblin['Health'] = 50.0
+goblin['Health'] = 30.0
 goblin['Agility'] = 40.0
 goblin['Strength'] = 35.0
 goblin['Level'] = 1
