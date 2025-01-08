@@ -3,6 +3,7 @@ import sys
 import random
 import time
     
+#Look to add to a webpage and make a webplayer game.
 
 print("HeacockBros RPG\n")    
 
